@@ -1,0 +1,702 @@
+
+@font-face {
+    font-family: 'reeyregular';
+    src: url('font/reey-regular-webfont.woff2') format('woff2'),
+         url('font/reey-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'de_valenciaregular';
+    src: url('font/De Valencia (beta)-webfont.eot');
+    src: url('font/De Valencia (beta)-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/De Valencia (beta)-webfont.woff2') format('woff2'),
+         url('font/De Valencia (beta)-webfont.woff') format('woff'),
+         url('font/De Valencia (beta)-webfont.ttf') format('truetype'),
+         url('font/De Valencia (beta)-webfont.svg#de_valenciaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ambleregular';
+    src: url('font/Amble-Regular-webfont.eot');
+    src: url('font/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Amble-Regular-webfont.woff2') format('woff2'),
+         url('font/Amble-Regular-webfont.woff') format('woff'),
+         url('font/Amble-Regular-webfont.ttf') format('truetype'),
+         url('font/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amblebold';
+    src: url('font/Amble-Bold-webfont.eot');
+    src: url('font/Amble-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Amble-Bold-webfont.woff2') format('woff2'),
+         url('font/Amble-Bold-webfont.woff') format('woff'),
+         url('font/Amble-Bold-webfont.ttf') format('truetype'),
+         url('font/Amble-Bold-webfont.svg#amblebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amblelight';
+    src: url('font/Amble-Light-webfont.eot');
+    src: url('font/Amble-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Amble-Light-webfont.woff2') format('woff2'),
+         url('font/Amble-Light-webfont.woff') format('woff'),
+         url('font/Amble-Light-webfont.ttf') format('truetype'),
+         url('font/Amble-Light-webfont.svg#amblelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amblelight_condensed';
+    src: url('font/Amble-LightCondensed-webfont.eot');
+    src: url('font/Amble-LightCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Amble-LightCondensed-webfont.woff2') format('woff2'),
+         url('font/Amble-LightCondensed-webfont.woff') format('woff'),
+         url('font/Amble-LightCondensed-webfont.ttf') format('truetype'),
+         url('font/Amble-LightCondensed-webfont.svg#amblelight_condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#container {
+    background-color: #FFF0F1;
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+}
+
+#logo {
+    width: 110px;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 1s ease-out;
+}
+
+#logo:hover{
+    transform: scale(0.95);
+}
+
+#reseau {
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+#logoinsta, #logoface {
+    width: 35px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+#logoinsta:hover, #logoface:hover {
+    opacity: 0.7;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 2%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 180px;
+}
+
+nav ul li {
+    margin-left: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-family: 'amblebold';
+    letter-spacing: 2px;
+    transition: 0.4s ease-out;
+}
+
+nav ul li:hover {
+    opacity: 0.5;
+}
+
+#titre {
+    position: absolute;
+    top: 180px;
+    left: 270px;
+    font-size: 110px;
+    text-transform: uppercase;
+    font-family: 'amblebold';
+    letter-spacing: 5px;
+}
+
+#titre div {
+    margin-bottom: -21px;
+}
+
+#explication {
+    font-size: 40px;
+    text-align: center;
+    width: 50%;
+    margin: 150px auto 0;
+    font-family: 'amblelight';
+    letter-spacing: 2px;
+
+}
+
+#concept img {
+    width: 50%;
+    height: 450px;
+    object-fit: cover;
+}
+
+#concept {
+    margin-top: 150px;
+    display: flex;
+}
+
+#concept h2 {
+    font-size: 60px;
+    font-family: 'amblebold';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#concept p {
+    font-family: 'amblelight';
+    font-size: 20px;
+    margin-top: 50px;
+    width: 70%;
+    letter-spacing: 2px;
+}
+
+#concept div {
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+#values img {
+    width: 50%;
+    height: 450px;
+    object-fit: cover;
+}
+
+#values {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#values h2 {
+    font-size: 60px;
+    font-family: 'amblebold';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#values p {
+    font-family: 'amblelight';
+    font-size: 20px;
+    margin-top: 40px;
+    width: 70%;
+    letter-spacing: 2px;
+}
+
+#values div {
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+#photodeco {
+    margin-top: 150px;
+    display: flex;
+}
+
+#photodeco #pic1 {
+    width: 40%;
+    height: 410px;
+    object-fit: cover;
+    object-position: 30%;
+}
+
+#photodeco #pic2 {
+    width: 60%;
+}
+
+#pic3 {
+    height: 600px;
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: -4px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: 'amblebold';
+    letter-spacing: 3px;
+}
+
+footer h4 {
+    font-family: 'amblelight';
+    margin-top: 30px;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    letter-spacing: 2px ;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+footer h4:hover {
+    opacity: 0.5;
+}
+
+footer h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'amblebold';
+    width: 70%;
+    padding-top: 150px;
+    margin-left: 100px;
+    letter-spacing: 4px;
+}
+
+#locdel {
+    display: flex;
+}
+
+#location {
+    padding-top: 150px;
+    margin-left: 100px;
+}
+
+#delivery {
+    padding-top: 150px;
+    margin-left: 300px;
+    width: 68px;
+}
+
+#contact {
+    padding-top: 150px;
+    margin-left: 100px;
+}
+
+#contact h2 {
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+#contact p {
+    font-family: 'amblelight';
+    letter-spacing: 2px;
+    width: 70%;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+#contact div {
+    display: flex;
+    margin-top: 40px;
+}
+
+#contact #tel {
+    margin-left: 150px;
+}
+
+#contact h4 {
+    font-family: 'ambleregular';
+    font-size: 23px;
+    letter-spacing: 4px;
+}
+
+footer img {
+    width: 220px;
+    display: block;
+    margin: 200px auto 150px;
+}
+
+#designed {
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+#designed h4 {
+    border-bottom: none;
+    font-family: 'reeyregular';
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: -100px;
+    padding-bottom: 50px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+h3:hover {
+    transform: translateY(-15px);
+}
+
+#loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: wait;
+}
+
+#loader img {
+    width: 150px;
+    animation: flash 2s linear infinite;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fondu-out {
+    animation: disparition 1s linear;
+}
+
+@keyframes disparition {
+    0% {
+        opacity: 1
+    }
+    25% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#countdown {
+    color: white;
+    font-size: 30px;
+    font-family: 'de_valenciaregular';
+    letter-spacing: -9px;
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    #logo {
+        width: 80px;
+    }
+    #logoinsta, #logoface {
+        width: 25px;
+    }
+    nav ul li {
+        font-size: 15px;
+    }
+    #titre {
+        top: 200px;
+        left: 200px;
+        font-size: 80px;
+    }
+    #explication {
+        font-size: 30px;
+        margin: 80px auto 0;
+    }
+    #concept img {
+        height: 350px;
+    }
+    #concept {
+        margin-top: 90px;
+    }
+    #concept h2 {
+        font-size: 30px;
+    }
+    #concept p {
+        font-size: 15px;
+        margin-top: 20px;
+        width: 90%;
+    }
+    #concept div {
+        margin-top: 60px;
+    }
+
+    #values img {
+        height: 350px;
+    }
+    #values {
+        margin-top: 100px;
+    }
+    #values h2 {
+        font-size: 30px;
+    }
+    #values p {
+        font-size: 15px;
+        margin-top: 20px;
+        width: 90%;
+    }
+    #values div {
+        margin-left: 60px;
+        margin-top: 60px;
+    }
+    #photodeco #pic1 {
+        height: 300px;
+    }
+    #pic3 {
+        height: 350px;
+    }
+    
+    footer h2 {
+        font-size: 20px;
+    }
+    
+    footer h4 {
+        font-size: 14px;
+    }
+
+    footer h1 {
+        font-size: 30px;
+    }
+    
+    #location {
+        margin-left: 95px;
+    }
+    
+    #delivery {
+        margin-left: 200px;
+    }
+    
+    #contact h2 {
+        font-size: 30px;
+    }
+    
+    #contact p {
+        font-size: 14px;
+    }
+    
+    #contact #tel {
+        margin-left: 80px;
+    }
+    
+    #contact h4 {
+        font-size: 16px;
+    }
+    
+    footer img {
+        width: 120px;
+    }
+    
+    #designed h4 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    #logo {
+        width: 50px;
+    }
+    #logoinsta, #logoface {
+        width: 20px;
+    }
+    nav ul li {
+        font-size: 10px;
+        margin-top: 50px;
+    }
+    #titre {
+        top: 270px;
+        left: 100px;
+        font-size: 50px;
+    }
+    #explication {
+        font-size: 20px;
+        margin: 80px auto 0;
+    }
+    #concept img {
+        height: 250px;
+        width: 100%;
+    }
+    #concept {
+        text-align: center;
+        margin-top: 90px;
+        flex-direction: column;
+    }
+    #concept h2 {
+        font-size: 30px;
+    }
+    #concept p {
+        font-size: 15px;
+        width: 60%;
+        margin: 20px auto 0;
+    }
+    #concept div {
+        margin-top: 60px;
+        margin-left: 0;
+    }
+
+    #values img {
+        height: 250px;
+        width: 100%;
+    }
+    #values {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 90px;
+    }
+    #values h2 {
+        font-size: 30px;
+    }
+    #values p {
+        font-size: 15px;
+        margin: 20px auto 0;
+        width: 60%;
+    }
+    #values div {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+    #photodeco {
+        margin-top: 80px;
+    }
+    #photodeco #pic1 {
+        height: 180px;
+    }
+    #pic3 {
+        height: 250px;
+    }
+    
+    footer h2 {
+        font-size: 15px;
+    }
+    
+    footer h4 {
+        font-size: 12px;
+    }
+
+    footer h1 {
+        font-size: 20px;
+        padding-top: 80px;
+        margin: 0 auto 0;
+    }
+
+    #locdel {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #location {
+        padding-top: 90px;
+        margin-left: 60px;
+        width: 50%;
+    }
+    
+    #delivery {
+        padding-top: 90px;
+        margin-left: 60px;
+    }
+
+    #contact {
+        padding-top: 100px;
+    }
+    
+    #contact h2 {
+        font-size: 15px;
+    }
+    
+    #contact p {
+        font-size: 12px;
+    }
+    
+    #contact #tel {
+        margin-left: 0px;
+        width: 60%;
+    }
+
+    #contact #mail {
+        width: 80%;
+    }
+
+    #contact div {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+    #contact h4 {
+        font-size: 12px;
+    }
+    
+    footer img {
+        width: 80px;
+        margin: 100px auto 100px;
+    }
+    
+    #designed h4 {
+        font-size: 15px;
+    }
+
+    #designed {
+        padding-bottom: 100px;
+    }
+}
